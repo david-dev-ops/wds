@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is an example description"> <!-- this content will show in a google search results-->
+    <meta name="description" content="This is an example description"> <!--  used by browser to show some description of page under the title, when search in google. put in content 
+    -->
     <title>Pink Floyd</title>
 </head>
 <body>
     <header>
         <nav>
-          <ul>Home</ul>
-          <ul>Store</ul>
-          <ul>About</ul>
+           <ul>
+               <!--anchor tag(or a tag)  = add links to webpage. href = Hypertext reference is a http attribute
+                href attribute value should be relative to the HTML file that the anchor tag is in.
+                ie: if page.html is in same folder as link.html(has anchor tag) , use: href="page.html"
+                also can link to other web pages:
+                <a href="https://www.google.com">Link to Google</a> = same syntax as for an img: <img src="https://image_url.com>-->
+                <li><a href="index.html">Home</a></li>  <!--as index page is in same folder as this page-->
+                <li><a href="store.html">Store</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
         <hr>
         <h1>Pink Floyd</h1>
+        <!--note these will be inline not block so both on same line so just use <br> the line break tag = use 2 to make a space-->
         <button  type="button">Get Our Latest Button</button>
         <br>
         <br>
-        <button  type="button">&#9658</button>
+        <!--<button> has a type attribute that can be : button, menu, reset or submit. As this is a generic button just use type="button" and place in other buttons also-->
+        <button  type="button">&#9658</button>  <!-- is just a play button-->
         <!-- TODO: FIND A BACKGROUND IMAGE-->
     </header>
+    <!--section is used for when all content is related-->
     <section>
         <h2>TOURS</h2>
+        <!--AS NO html element to create all the rows use a div to wrap all rows , which is meaningless and as a block element
+        all items will appear on a dif line. and also wrap each row in its own div-->
         <div>
             <div>
                 <strong>Jul 16</strong>
+                <!--<strong> = bold, sometimes with a screen reader , will be read with specail emphasis
+                   html removes all spaces, tab, new line at end of element, so use html entities for spaces
+                    &lt;&gt;  put between all text of div to space it 
+                
+                -->
+
                 &lt;&gt;
                 <span>Detroit, MI</span>
                 &lt;&gt;
@@ -91,9 +110,21 @@
     <footer>
         <h3>Pink Floyd</h3>
         <ul>
-            <li><img src="images/YouTube Logo.png"></li>
-            <li><img src="images/Spotify Logo.png"></li>
-            <li><img src="images/Facebook Logo.png"></li>
+            <li>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/YouTube Logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://spotify.com" target="_blank">
+                    <img src="images/Spotify Logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/Facebook Logo.png">
+                </a>
+            </li>
         </ul>
     </footer>
 

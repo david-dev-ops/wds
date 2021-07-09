@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="This is an example description"> <!-- this content will show in a google search results-->
+    <title>Pink Floyd | Store </title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+             <li><a href="index.html">Home</a></li>  <!--as index page is in same folder as this page-->
+             <li><a href="store.html">Store</a></li>
+             <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <hr>
+        <h1>Pink Floyd</h1>
+    </header>
+    <!--3 sections each with a title. Each section has a div for each contained content and in each div need a div for the album name in bold as its on its own line so cant
+    just use <span> then an img and lastly another div to add price and button -->
+    <section>
+        <h2>MUSIC</h2>
+        <div>
+            <div>
+                <strong>Album 1</strong>
+            </div>
+            <img src="images/Animals3.jpg" width="300" height="300">
+            <!--width and height properties. if only set the width , then height is auto made to be in ratio of old pic. so if old was 200 wide x 400 tall
+            and only set width to be 100, then the height is auto to 200 ie: a 1:2 ratio-->
+            <div>
+                <span>$12.99</span>
+                <button role="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <strong>Album 2</strong>
+            </div>
+            <img src="images/DarkSideOfTheMoon.jpg" width="300"  height="300">
+            <div>
+                <span>$14.99</span>
+                <button role="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <strong>Album 3</strong>
+            </div>
+            <img src="images/TheWall.jpg" width="300"  height="300">
+            <div>
+                <span>$15.99</span>
+                <button role="button">ADD TO CART</button>
+        </div>
+        <div>
+            <div>
+                <strong>Album 4</strong>
+            </div>
+            <img src="images/WishYouWereHere.jpg" width="300"  height="300">
+            <div>
+                <span>$9.99</span>
+                <button role="button">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>MERCHANDISE</h2>
+        <div>
+            <div>
+                <strong>T-Shirt</strong>
+            </div>
+            <img src="images/TShirt.jpg"  width="300"  height="300">
+            <div>
+                <span>$19.99</span>
+                <button role="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <strong>Coffeee Cup</strong>
+            </div>
+            <img src="images/coffeeCup.jpg"  width="300"  height="300">
+            <div>
+                <span>$15.99</span>
+                <button role="button">ADD TO CART</button>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h2>CART</h2>
+        <div>  <!--to put all on same line with spacing-->
+            <strong>ITEM</strong>
+            &lt;&gt;
+            <strong>PRICE</strong>
+            &lt;&gt;
+            <strong>QUANTITY</strong>
+        </div>
+        <div>
+            <img src="images/TShirt.jpg" width="100" height="100">
+            <span>T-Shirt</span>
+            &lt;&gt;
+            <span>$19.99</span>
+            &lt;&gt;
+            <input type="number" value="1"> <!-- prepopulate the field to have 1, should only allow number inputs-->
+            <button role="button">REMOVE</button>
+        </div>
+        <div>
+            <img src="images/TheWall.jpg" width="100" height="100">
+            <span>Album 3</span>
+            &lt;&gt;
+            <span>$15.99</span>
+            &lt;&gt;
+            <input type="number" value="2"> <!-- prepopulate the field to have 1, should only allow number inputs-->
+            <button role="button">REMOVE</button>
+        </div>
+        <hr>
+        <div>
+            <strong>Total</strong>
+            <span>$39.97</span>
+        </div>
+        <div>
+            <button>PURCHASE</button>
+        </div>
+    </section>
+    <footer>
+        <h3>Pink Floyd</h3>
+        <ul>
+            <li>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/YouTube Logo.png">
+                    <!--Target attribute is optional and specifies where the link should open. def value is self so it opens in current browser tab
+                    To open in dif tab: <a target="_blank">NewTabLink</a>  , def = _self-->
+                </a>
+            </li>
+            <li>
+                <a href="https://spotify.com" target="_blank">
+                    <img src="images/Spotify Logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/Facebook Logo.png">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
